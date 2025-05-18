@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Объявление типа документа — сообщает браузеру, что это HTML5 -->
+
+<html lang="ru">
+<!-- Открытие HTML-документа с указанием языка (русский) -->
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Установка кодировки документа для корректного отображения символов -->
+
+  <title>The Players Queue</title>
+  <!-- Заголовок страницы, отображается на вкладке браузера -->
+
+  <link rel="stylesheet" href="queue.css" />
+  <!-- Подключение внешнего CSS-файла для оформления -->
+</head>
+
+<body>
+<!-- Начало тела документа — всё, что видно пользователю -->
+
+  <nav class="navbar">
+  <!-- Навигационная панель (меню сайта) -->
+
+    <a href="index.html">Home</a>
+    <!-- Ссылка на главную страницу -->
+
+    <a href="about.html">About The Club</a>
+    <!-- Ссылка на страницу о клубе -->
+
+    <a href="queue.html">Players Queue</a>
+    <!-- Ссылка на текущую страницу -->
+
+    <a href="matches.html">Matches</a>
+    <!-- Ссылка на страницу с матчами -->
+  </nav>
+
+  <div class="container">
+  <!-- Контейнер для основного содержимого страницы -->
+
+    <h1>The Players Queue</h1>
+    <!-- Главный заголовок страницы -->
+
+    <input type="text" id="playerInput" placeholder="Enter the player name" />
+    <!-- Текстовое поле для ввода имени игрока -->
+
+    <button onclick="enqueuePlayer()">Add player</button>
+    <!-- Кнопка для добавления игрока в очередь (срабатывает функция enqueuePlayer) -->
+
+    <button onclick="dequeuePlayer()">Remove first</button>
+    <!-- Кнопка для удаления первого игрока в очереди (функция dequeuePlayer) -->
+
+    <ul id="queueList"></ul>
+    <!-- Список игроков, добавленных в очередь -->
+  </div>
+
+  <script src="queue.js"></script>
+  <!-- Подключение JavaScript-файла, в котором описано поведение очереди -->
+</body>
+</html>
+<!-- Закрытие HTML-документа -->

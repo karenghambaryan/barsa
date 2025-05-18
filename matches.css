@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #a1b5c9, #a50044);
+  color: white;
+}
+
+.navbar {
+  background-color: #0716e6;
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar a {
+  margin: 0 15px;
+  color: rgb(245, 241, 241);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #e2e211;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+   
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+   
+}
+
+h1, h2 {
+  text-align: center;
+  
+
+  color: #fdd835;
+  /* Цвет заголовков — жёлтый (в стиле Барселоны) */
+}
+
+.match-list {
+  list-style: none;
+  /* Убирает маркеры у списка */
+
+  padding: 0;
+  /* Убирает отступы внутри списка */
+}
+
+.match-list li {
+  background-color: #ffffff10;
+  /* Полупрозрачный светлый фон для каждого матча */
+
+  border-left: 5px solid #fdd835;
+  /* Жёлтая полоса слева как акцент */
+
+  margin-bottom: 10px;
+  /* Расстояние между элементами списка */
+
+  padding: 10px 15px;
+  /* Внутренние отступы у каждого элемента */
+
+  border-radius: 6px;
+  /* Скругление углов */
+
+  color: #fff;
+  /* Белый текст внутри */
+}
+
+.match-list li a {
+  color: #fdd835;
+  /* Цвет ссылок внутри списка — жёлтый */
+
+  text-decoration: underline;
+  /* Ссылки подчёркнуты */
+}
+
+.match-list li a:hover {
+  text-decoration: none;
+  /* Убирается подчёркивание при наведении */
+
+  color: #ffeb3b;
+  /* Более яркий жёлтый при наведении */
+}
